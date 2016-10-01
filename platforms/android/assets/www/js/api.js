@@ -1,6 +1,6 @@
 var Api = function(){
 	this.api_key = null;  
-	this.api_domain = 'http://localhost/'; 
+	this.api_domain = 'http://192.168.0.4/'; 
 }; 
 
 //Métodos ~privados~
@@ -21,12 +21,12 @@ Api.prototype.sender = function(relativePath, data, callback){
 }; 
 //Métodos ~privados~
 
-Api.prototype.getMe    = function(callback){
+Api.prototype.getUser    = function(callback){
 	var data = {
 		api_key: this.getApiKey()
 	}; 
 
-	this.sender('u/getMe', data, callback); 
+	this.sender('u/getUser', data, callback); 
 }; 
 
 Api.prototype.isLogged = function(){
@@ -54,7 +54,7 @@ Api.prototype.register = function(nome, telefone, senha, confirmacao, callback){
 };
 
 //Rotas que precisam da api_key: 
-Api.prototype.order = function(callback){
+Api.prototype.order = function(complemento, latitude, logitude, visita_hora, visita_data, callback){
 	if(this.getApiKey() == null)
 		return false; 
 

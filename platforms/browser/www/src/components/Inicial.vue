@@ -51,11 +51,12 @@
 
 <script>
 	export default{
+		props: ['api'], 
+
 		data: () => {
 			return {
 				isLogged: false, 
-				user: {}, 
-				api: new Api()
+				user: {}
 			}
 		}, 
 
@@ -80,7 +81,7 @@
 				this.user     = userData; 
 				this.api.setApiKey(userData.authResponse.accessToken); 
 
-				this.api.getMe(function(data){
+				this.api.getUser(function(data){
 					alert(JSON.stringify(data)); 
 				}); 
 

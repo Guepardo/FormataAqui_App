@@ -15,7 +15,7 @@
 
       <div class="content" data-tab-contents="true" data-disable-swipe="false" data-tab-default="1">
         <!-- TAB -->
-        <inicial> </inicial>
+        <inicial :api="api"> </inicial>
         <!-- TAB -->
 
         <!-- TAB -->
@@ -94,6 +94,8 @@
 	import Inicial from './Inicial.vue'; 
 
 		export default{
+      props: ['api'], 
+
 			data: () => {
 				return {
 					isLogged: false
@@ -101,8 +103,7 @@
 			}, 
 
 			ready: function(){
-		        var api = new Api(); 
-		        this.isLogged = api.isLogged(); 
+		        this.isLogged = this.api.isLogged(); 
 			}, 
 
 			components:{

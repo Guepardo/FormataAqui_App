@@ -42,10 +42,10 @@
  	<!-- POPOVER end -->
 
  	<!-- PANEL -->
- 	<painel-solicitar> </painel-solicitar>
+ 	<painel-solicitar :api="api"> </painel-solicitar>
  	<!-- PANEL end -->
 
- 	<home> </home>
+ 	<home :api="api"> </home>
  	</template>
 
  	<script>
@@ -57,7 +57,8 @@
  			data: () =>{
  				return{
  					app: phonon.navigator(), 
- 					isLogged: false
+ 					isLogged: false, 
+ 					api: new Api()
  				}
  			}, 
 
@@ -75,8 +76,7 @@
 		        
 		        this.app.start();
 
-		        var api = new Api(); 
-		        this.isLogged = api.isLogged(); 
+		        this.isLogged = this.api.isLogged(); 
 
  			}, 
 

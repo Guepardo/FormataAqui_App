@@ -27,7 +27,7 @@
 			<div class="row margin">
 				<div class="phone-12 column">
 					<strong>Complemento do seu endereço</strong>
-					<input type="text" placeholder="Nº 2, Lote 2 Qd. 1">
+					<input type="text" v-model="complemento" placeholder="Nº 2, Lote 2 Qd. 1">
 				</div>
 			</div>
 			
@@ -46,20 +46,20 @@
 			<div class="row ">
 				<div class="phone-12 column">
 					<strong>Data</strong>
-					<input type="date" placeholder="Nº 2, Lote 2 Qd. 1">
+					<input type="date" v-model="data_visita" placeholder="Nº 2, Lote 2 Qd. 1">
 				</div>
 			</div>
 
 			<div class="row ">
 				<div class="phone-12 column">
 					<strong>Hora</strong>
-					<input type="time" placeholder="Nº 2, Lote 2 Qd. 1">
+					<input type="time" v-model="hora_visita" placeholder="Nº 2, Lote 2 Qd. 1">
 				</div>
 			</div>
 
 			<div class="row margin">
 				<div class="phone-12 column">
-					<button id="btn-solicitar" class="btn fit-parent primary" @click="getLocation">Solicitar Visita</button>
+					<button id="btn-solicitar" class="btn fit-parent primary" @click="registerOder">Solicitar Visita</button>
 				</div>
 			</div>
 			
@@ -69,6 +69,8 @@
 
 <script>
 	export default{
+		props: ['api'], 
+
 		data: () =>{
 			return{
 				location: {}
@@ -92,6 +94,14 @@
 					maximumAge: 0
 				};
 				navigator.geolocation.getCurrentPosition(this.onSuccessLocation, function(){alert('error')},options); 
+			}, 
+
+			registerOder: function(){
+				var handler = function(data){
+					alert(JSON.stringify(data)); 
+				}
+
+				this.api.order(this.complemento, 1000, 1000, this.hora_visita, this.data_visita,handler); 
 			}
 		}
 		

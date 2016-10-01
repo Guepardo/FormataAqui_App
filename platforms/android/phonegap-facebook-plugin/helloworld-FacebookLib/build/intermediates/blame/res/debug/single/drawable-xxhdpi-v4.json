@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\bsine\\Desktop\\FormataAqui_App\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png",
+        "source": "C:\\Users\\bsine\\Desktop\\FormataAqui_App\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\res\\drawable-xxhdpi\\com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\bsine\\Desktop\\FormataAqui_App\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_icon.png",
+        "source": "C:\\Users\\bsine\\Desktop\\FormataAqui_App\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\res\\drawable-xxhdpi\\com_facebook_button_like_icon.png"
+    },
+    {
         "merged": "C:\\Users\\bsine\\Desktop\\fmt\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_icon.png",
         "source": "C:\\Users\\bsine\\Desktop\\fmt\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\res\\drawable-xxhdpi\\com_facebook_button_like_icon.png"
     },
@@ -8,8 +16,20 @@
         "source": "C:\\Users\\bsine\\Desktop\\fmt\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\res\\drawable-xxhdpi\\com_facebook_button_like_pressed.png"
     },
     {
+        "merged": "C:\\Users\\bsine\\Desktop\\FormataAqui_App\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_background_selected.png",
+        "source": "C:\\Users\\bsine\\Desktop\\FormataAqui_App\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\res\\drawable-xxhdpi\\com_facebook_button_like_background_selected.png"
+    },
+    {
         "merged": "C:\\Users\\bsine\\Desktop\\fmt\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_background_selected.png",
         "source": "C:\\Users\\bsine\\Desktop\\fmt\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\res\\drawable-xxhdpi\\com_facebook_button_like_background_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\bsine\\Desktop\\FormataAqui_App\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_background.png",
+        "source": "C:\\Users\\bsine\\Desktop\\FormataAqui_App\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\res\\drawable-xxhdpi\\com_facebook_button_like_background.png"
+    },
+    {
+        "merged": "C:\\Users\\bsine\\Desktop\\FormataAqui_App\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_pressed.png",
+        "source": "C:\\Users\\bsine\\Desktop\\FormataAqui_App\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\res\\drawable-xxhdpi\\com_facebook_button_like_pressed.png"
     },
     {
         "merged": "C:\\Users\\bsine\\Desktop\\fmt\\platforms\\android\\phonegap-facebook-plugin\\helloworld-FacebookLib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_background.png",
